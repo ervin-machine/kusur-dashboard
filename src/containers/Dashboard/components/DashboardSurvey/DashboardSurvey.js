@@ -51,7 +51,7 @@ function DashboardSurvey() {
                                 <label className='label-1' htmlFor="sarma">Sarma ili burek?</label><br />
                             </div>
                             <div style={{ display: "flex" }}>
-                                <input type="radio" id="kusur" name="pitanje" value="true" style={{ width: "21px", height: "21px"}} />
+                                <input type="radio" id="kusur" name="pitanje" value="true" style={{ width: "18px", height: "18px"}} />
                                 <label className='label-1' htmlFor="kusur">Koliko često koristite system Kusur primjer kako izgleda duže <br /> pitanje u dva ili više rodova gdje mi je lubenica svoj voz imaju?</label>
                             </div>
                         </div>
