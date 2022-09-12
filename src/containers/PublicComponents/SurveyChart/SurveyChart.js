@@ -34,6 +34,7 @@ export default function SurveyChart() {
         let percentageCalculated = (parseInt(data.value) / value) * 100;
         return `${percentageCalculated.toFixed(2)}%`;
     };
+    
 
     return (
         <div className="survey-chart-head">

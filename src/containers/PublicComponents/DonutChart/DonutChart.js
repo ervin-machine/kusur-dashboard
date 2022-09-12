@@ -49,7 +49,7 @@ export default function DonutChart(props) {
                         data={infoData}
                         width={150}
                         height={150}
-                        cx="50%"
+                        cx="35%"
                         cy="35%"
                         innerRadius={30}
                         outerRadius={80}
@@ -73,10 +73,9 @@ export default function DonutChart(props) {
                     <Legend
                         height={36}
                         iconType="circle"
-                        layout="vertical"
-                        align="right"
-                        verticalAlign="top"
+                        layout="vetical" verticalAlign="middle" align="right"
                         iconSize={10}
+                        wrapperStyle={{top: 90}}
                         formatter={renderColorfulLegendText}
                     />
                     
