@@ -1,0 +1,38 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../assets/fonts/Roboto-Regular.ttf');
+  }
+
+.left-sidebar-head {
+    width: 251px;
+    height: 100%;
+    background-color: #0F172E;
+    padding-right: 30px;
+    margin-left: -20px;
+    margin-top: -8px;
+}
+
+.left-sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.left-sidebar-list-item {
+    display: flex;
+    margin-left: 11px;
+    padding-left: 10px;
+
+}
+
+.left-sidebar-list-item-text {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+    margin-left: 15px;
+    width: max-content;
+}

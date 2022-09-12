@@ -1,0 +1,115 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../../../assets/fonts/Roboto-Regular.ttf');
+}
+
+.dashboard-statistic {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.dashboard-statistic-title {
+    margin-top: 50px;
+    color: #100F10;
+    font-size: 28px;
+    font-family: RobotoRegular;
+    font-weight: bold;
+}
+
+.dashboard-statistic-buttons {
+    display: flex;
+    margin-right: 32px;
+    margin-top: 42.25px;
+
+}
+
+.dashboard-statistic-button {
+    font-family: RobotoRegular;
+    width: 200px;
+    height: 49px;
+    border: none;
+    color: #403F40;
+    font-size: 16px;
+    border: 1px solid #EBECEE;
+    background-color: white;
+    padding-right: 80px;
+}
+
+.left-button {
+    margin-right: 20px;
+}
+
+.dashboard-statistic-content {
+    display: flex;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1050px) {
+    .info-cards {
+        justify-content: space-evenly;
+        margin-right: 32px;
+    }
+}
+
+@media screen and (max-width: 1049px) and (min-width: 300px) {
+    .info-cards {
+        flex-wrap: wrap;
+        margin-left: 6px;
+        justify-content: center;
+    }
+
+    .dashboard-statistic-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 769px) and (min-width: 500px) {
+    .dashboard-statistic {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        flex-wrap: wrap;
+    }
+    .dashboard-statistic-buttons {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 499px) and (min-width: 340px) {
+    .dashboard-statistic {
+        display: flex;
+        justify-content: center;
+        margin-left: -10px;
+        flex-wrap: wrap;
+    }
+    .dashboard-statistic-buttons {
+        margin-top: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -10px;
+    }
+    .dashboard-statistic-button {
+        margin-top: 10px;
+    }
+    .left-button {
+        margin-right: 0px;
+    }
+}
+/* 
+1599 - 1050 space-evenly, margin-right 32px
+1049 - 500 display: flex;
+    flex-wrap: wrap;
+    margin-left: 6px;
+    justify-content: space-evenly;
+        flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+*/

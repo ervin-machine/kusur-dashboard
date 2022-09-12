@@ -1,0 +1,89 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../../assets/fonts/Roboto-Regular.ttf');
+  }
+
+.nadogradi-paket-card-section {
+    width: 305px;
+    height: 274px;
+    background-color: white;
+    margin-top: 20px;
+    border: 1px solid white;
+    margin-left: 29px;
+}
+
+.nadogradi-paket-card-content {
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 0px;
+}
+
+.nadogradi-paket-card-text {
+    font-family: RobotoRegular;
+    font-size: 14px;
+    color: #403F40;
+    font-weight: 600;
+}
+
+.nadogradi-paket-button-naziv {
+    font-family: RobotoRegular;
+    font-weight: normal;
+    width: 147px;
+    height: 42px;
+    color: #575962;
+    background-color: #5759621A;
+    border-radius: 2px;
+    border: none;
+}
+.nadogradi-paket-card-footer {
+    position: absolute;
+    margin-left: 21px;
+    text-align: center;
+}
+
+.nadogradi-paket-card-footer-text {
+    font-family: RobotoRegular;
+    font-size: 14px;
+    color: #403F40;
+    font-weight: 600;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.nadogradi-paket-card-footer-text-1 {
+    font-family: RobotoRegular;
+    font-size: 12px;
+    color: #747474;
+    margin-top: -5px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.true-icon {
+    margin-top: -16px;
+}
+
+.nadogradi-button {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    font-weight: 600;
+    height: 34px;
+    color: #3D44DB;
+    width: 266px;
+    border: none;
+    background: #3D44DB1A;
+    padding-right: 25px;
+}
+
+.prijava-icon {
+    margin-top: 12px;
+    position: absolute;
+    margin-left: 176.5px;
+    left: 0;
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1050px) {
+    .nadogradi-paket-card-section {
+        margin-top: 80px;
+    }
+}

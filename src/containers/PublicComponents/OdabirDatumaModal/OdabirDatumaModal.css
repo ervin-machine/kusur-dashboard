@@ -1,0 +1,65 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../../assets/fonts/Roboto-Regular.ttf');
+}
+
+.doabir-datuma-head {
+    position: absolute;
+    width: 307px;
+    background-color: white;
+    height: 298px;
+    margin-left: -107px;
+}
+
+.ovaj-mjesec {
+    font-family: RobotoRegular;
+    width: 96px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: -5px;
+    height: 24px;
+    background: #EBECEE;
+    margin-left: -10px;
+    color: #403F40CC;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.ova-godina {
+    font-family: RobotoRegular;
+    color: #403F40CC;
+    margin-top: -6px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.odabir-datuma-text {
+    font-family: RobotoRegular;
+    color: #403F40CC;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.primijeni-button {
+    width: 124px;
+    height: 52px;
+    background-color: #3D44DB;
+    color: white;
+    font-family: RobotoRegular;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+}
+
+.ponisti-button {
+    width: 124px;
+    height: 52px;
+    background-color: white;
+    color: #3D44DB;
+    font-family: RobotoRegular;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+}

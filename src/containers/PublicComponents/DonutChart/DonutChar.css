@@ -1,0 +1,38 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../../assets/fonts/Roboto-Regular.ttf');
+}
+
+.label-top {
+    transform: translateY(5px);
+}
+
+.donut-chart-head {
+    width: 305px;
+    height: 321px;
+    background-color: white;
+    border: 1px solid #EBECEE;
+    margin-left: 19px;
+}
+.donut-chart-title {
+    font-family: RobotoRegular;
+    margin: 20px;
+    font-size: 14px;
+    color: #403F40;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1276px) and (min-width: 1050px) {
+    .donut-chart-head {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1049px) and (min-width: 300px) {
+    .donut-chart-head {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+}
+

@@ -1,0 +1,77 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../../../assets/fonts/Roboto-Regular.ttf');
+}
+
+.podrska-card-head {
+    width: 600.25px;
+    height: 333px;
+    margin: 33px 0px 0px 17.75px;
+    background-color: white;
+    border: 1px solid #EBECEE;
+}
+
+.podrska-card-content {
+    margin: 20px 0px 0px 30px;
+}
+
+.podrska-card-title {
+    font-family: RobotoRegular;
+    font-size: 28px;
+    font-weight: 600;
+    color: #100F10;
+}
+
+.podrska-card-text {
+    font-family: RobotoRegular;
+    font-size: 14px;
+    font-weight: normal;
+    color: #403F40CC;
+}
+
+.podrska-card-item-text {
+    font-family: RobotoRegular;
+    font-size: 12px;
+    font-weight: normal;
+    color: #747474;
+    margin-left: 10px;
+}
+
+.kontakt-button {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3D44DB;
+    width: 181px;
+    height: 44px;
+    border: 1px solid #3D44DB;
+    border-radius: 2px;
+    background-color: white;
+    margin-top: 71px;
+    padding-right: 40px;
+}
+
+.kontakt-button-1 {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3D44DB;
+    width: 181px;
+    height: 44px;
+    border: 1px solid #3D44DB;
+    border-radius: 2px;
+    background-color: white;
+    margin-top: 30px;
+    padding-right: 40px;
+}
+.prijava-icon-podrska {
+    position: absolute;
+    margin-top: 88px;
+    margin-left: -40px;
+}
+
+.prijava-icon-podrska-1 {
+    position: absolute;
+    margin-top: 48px;
+    margin-left: -40px;
+}

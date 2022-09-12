@@ -1,0 +1,42 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../../assets/fonts/Roboto-Regular.ttf');
+  }
+.info-card-section {
+    width: 305px;
+    height: 127px;
+    background-color: white;
+    border: 1px solid #EBECEE;
+    margin: 20px 0px -10px 19px;
+}
+
+.info-card-content {
+    display: flex;
+}
+
+.info-card-title {
+    font-family: RobotoRegular;
+    font-size: 14px;
+    color: #403F40;
+    font-weight: 600;
+    margin-top: 21px;
+    margin-bottom: 0px;
+}
+
+.info-card-number {
+    font-family: RobotoRegular;
+    font-size: 20px;
+    color: #403F40;
+    margin-top: -16px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.info-card-new-consumer {
+    font-family: RobotoRegular;
+    font-size: 12px;
+    color: #747474; 
+    margin-top: 2px;
+    font-weight: normal;
+}

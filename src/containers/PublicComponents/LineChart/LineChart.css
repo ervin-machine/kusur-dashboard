@@ -1,0 +1,20 @@
+.line-chart {
+    width: 632px;
+    height: 321px;
+    background-color: white;
+    border: 1px solid #EBECEE;
+    border-radius: 2px;
+    margin-left: 29px;
+}
+
+@media screen and (max-width: 1049px) and (min-width: 300px) {
+    .line-chart {
+        width: 307px;
+        height: 321px;
+        background-color: white;
+        border: 1px solid #EBECEE;
+        border-radius: 2px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+}

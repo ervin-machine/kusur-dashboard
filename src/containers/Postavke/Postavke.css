@@ -1,0 +1,22 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../assets/fonts/Roboto-Regular.ttf');
+}
+
+.postavke-container {
+    margin-left: 60px;
+}
+
+.postavke-title {
+    font-family: RobotoRegular;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.postavke-form {
+    width: 540px;
+}
+
+.postavke-title {
+    margin-left: 55px;
+}

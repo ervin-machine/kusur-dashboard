@@ -1,0 +1,214 @@
+.dashboard-survey-container {
+    display: flex !important;
+    margin-top: 0px;
+    padding-bottom: 354px;
+    margin-right: 20px
+}
+
+.dashboard-survey-section {
+    max-width: 972px;
+    height: auto;
+    background-color: white;
+    margin-left: 29px;
+    margin-top: 35px;
+}
+
+.survey-pitanja-title {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    color: #403F40;
+    font-weight: 600;
+}
+
+.survey-filter-title {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    color: #403F40;
+    font-weight: 600;
+}
+
+.survey-pitanja-content {
+    display: flex;
+}
+
+.survey-pitanja-head {
+    margin: 30px 0px 0px 25px;
+}
+
+.survey-filter-head {
+    margin: -90px 0px 0px 25px;
+}
+
+.informacije-head {
+    width: 314px;
+    height: 429px;
+    background-color: #F9F9F9;
+    margin-top: 30px;
+}
+
+.informacije-content {
+    margin: 104px 0px 0px 30px;
+}
+
+.informacije-title {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    color: #403F40;
+    margin-bottom: 25px;
+}
+
+.informacije-text {
+    font-family: RobotoRegular;
+    font-size: 14px;
+    color: #403F40CC;
+    margin-top: -10px;
+    font-weight: normal;
+}
+
+.informacije-text-1 {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    color: #403F40;
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+input[type='radio'] {
+    display: block !important;
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+input[type='radio']:checked:before {
+    content: '';
+    display: block;
+    width: 10px;
+    background-color: white;
+    height: 10px;
+    border: 5px solid blue;
+    margin: 0px 20px 20px 0px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.label-1 {
+    font-family: RobotoRegular;
+    font-size: 14px;
+    color: #403F40;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1050px) {
+    .dashboard-survey-container {
+        display: flex;
+        margin-top: 30px;
+        padding-bottom: 354px;
+        flex-wrap: wrap;
+    }
+    .informacije-content {
+        margin: 0px 0px 0px 30px;
+    }
+    .informacije-head {
+        margin-top: 30px;
+    }
+    .survey-pitanja-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1049px) and (min-width: 1020px) {
+    .dashboard-survey-container {
+        display: flex;
+        margin-top: 30px;
+        padding-bottom: 354px;
+        flex-wrap: wrap;
+    }
+    .informacije-content {
+        margin: 0px 0px 0px 30px;
+    }
+    .informacije-head {
+        margin-top: 10px;
+    }
+    .survey-pitanja-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1019px) and (min-width: 755px) {
+    .dashboard-survey-container {
+        display: flex;
+        margin-top: 30px;
+        padding-bottom: 354px;
+        flex-wrap: wrap;
+    }
+    .informacije-content {
+        margin: 0px 0px 0px 30px;
+    }
+    .informacije-head {
+        margin-top: 10px;
+    }
+    .survey-pitanja-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 754px) and (min-width: 695px) {
+    .dashboard-survey-section {
+        max-width: 972px;
+        height: auto;
+        background-color: white;
+        margin-left: 5px;
+        margin-top: 35px;
+    }
+    .dashboard-survey-container {
+        display: flex;
+        margin-top: 30px;
+        padding-bottom: 354px;
+        flex-wrap: wrap;
+    }
+    .informacije-content {
+        margin: 0px 0px 0px 30px;
+    }
+    .informacije-head {
+        margin-top: 10px;
+    }
+    .survey-pitanja-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 694px) and (min-width: 340px) {
+    .dashboard-survey-section {
+        max-width: 972px;
+        height: auto;
+        background-color: white;
+        margin-left: -5px;
+        margin-top: 35px;
+    }
+    .dashboard-survey-container {
+        display: flex;
+        margin-top: 30px;
+        padding-bottom: 354px;
+        flex-wrap: wrap;
+    }
+    .informacije-content {
+        margin: 0px 0px 0px 30px;
+    }
+    .informacije-head {
+        margin-top: 10px;
+    }
+    .survey-pitanja-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

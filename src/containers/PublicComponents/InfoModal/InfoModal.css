@@ -1,0 +1,77 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../../assets/fonts/Roboto-Regular.ttf');
+}
+
+.info-modal-head {
+    background-color: white;
+    width: 923px;
+    height: 551px;
+    box-shadow: 0px 10px 39px #45414e1a;
+    border: 1px solid #F8F8F8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.info-modal-content {
+    width: 923px;
+    height: 551px;
+    display: flex;
+}
+.info-modal-left-content {
+    width: 482px;
+}
+
+.info-modal-left-title {
+    text-align: center;
+    font-family: RobotoRegular;
+    font-size: 18px;
+    color: #3D44DB;
+    font-weight: 600;
+    margin-top: 32px;
+}
+
+.info-modal-download-content {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 148px;
+}
+
+.info-modal-right-content {
+    width: 439px;
+}
+
+.info-modal-pin-content {
+    text-align: center;
+    margin-top: 148px;
+}
+
+.download-button {
+    text-align: center;
+    font-family: RobotoRegular;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -90px;
+    position: absolute;
+    height: 52px;
+    width: 252px;
+    background: #3D44DB 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    border: none;
+    color: white;
+}
+
+.vertical-line {
+    height: 382px;
+    width: 1px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 55px;
+    left: 50%;
+    margin-top: -41px;
+    top: 50%;
+    background: #F8F8F8;
+}

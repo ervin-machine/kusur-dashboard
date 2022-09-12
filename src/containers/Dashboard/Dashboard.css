@@ -1,0 +1,48 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../assets/fonts/Roboto-Regular.ttf');
+  }
+  
+
+.dashboard-container {
+    height: 37px;
+}
+
+.dashboard-content {
+    margin-top: -9px;
+    height: auto;
+    background-color: rgb(252, 252, 252);
+}
+
+.section-type {
+    display: flex;
+    margin-left: 30px;
+}
+
+.section-text {
+    font-family: RobotoRegular;
+    font-size: 14px;
+    color: #403f40cc;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.info-icon {
+    margin-left: -10px;
+    margin-top: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.footer-head {
+    position: absolute;
+    text-align: center;
+    height: 60px;
+    width: 86%;
+    background-color: white;
+    padding-top: 40px;
+    font-family: RobotoRegular;
+    color: #403F40CC;
+    font-size: 14px;
+    font-weight: normal;
+}

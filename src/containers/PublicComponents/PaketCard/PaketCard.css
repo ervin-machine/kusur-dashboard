@@ -1,0 +1,73 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../../assets/fonts/Roboto-Regular.ttf');
+}
+
+.paket-card-section {
+    width: 305px;
+    height: 274px;
+    background-color: white;
+    margin-top: 20px;
+    border: 1px solid white;
+    margin-left: 29px;
+}
+
+.paket-card-content {
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 0px;
+}
+
+.paket-card-text {
+    font-family: RobotoRegular;
+    font-size: 14px;
+    color: #403F40;
+    font-weight: 600;
+}
+
+.paket-button-naziv {
+    font-family: RobotoRegular;
+    font-weight: normal;
+    width: 147px;
+    height: 42px;
+    color: #FEC478;
+    background-color: #ECB3001A;
+    border-radius: 2px;
+    border: none;
+}
+
+.paket-card-footer {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 50px;
+    text-align: center;
+    width: max-content;
+}
+
+.paket-card-footer-text {
+    font-family: RobotoRegular;
+    font-size: 14px;
+    color: #403F40;
+    font-weight: 600;
+}
+
+.paket-card-footer-text-1 {
+    font-family: RobotoRegular;
+    font-size: 12px;
+    color: #747474;
+    margin-top: -5px;
+    font-weight: normal;
+}
+
+.label-1 {
+    font-family: RobotoRegular;
+    font-size: 14px;
+    color: #403F40;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1050px) {
+    .paket-card-section {
+        margin-top: 80px;
+    }
+}

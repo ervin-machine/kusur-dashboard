@@ -1,0 +1,33 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../../assets/fonts/Roboto-Regular.ttf');
+}
+
+.bar-chart-head {
+    width: 305px;
+    height: 321px;
+    background-color: white;
+    border: 1px solid #EBECEE;
+    margin-left: 19px;
+}
+
+.bar-chart-title {
+    font-family: RobotoRegular;
+    margin: 20px;
+    font-size: 14px;
+    color: #403F40;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1050px) {
+    .bar-chart-head {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1049px) and (min-width: 300px) {
+    .bar-chart-head {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+}

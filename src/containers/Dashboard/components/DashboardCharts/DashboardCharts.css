@@ -1,0 +1,24 @@
+.dashboard-charts {
+    display: flex;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1050px) {
+    .dashboard-charts {
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-right: 32px;
+    }
+}
+
+@media screen and (max-width: 1049px) and (min-width: 300px) {
+    .dashboard-charts {
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-right: 32px;
+    }
+}
