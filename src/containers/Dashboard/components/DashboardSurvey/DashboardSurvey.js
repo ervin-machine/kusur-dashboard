@@ -4,7 +4,6 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import SurveyChart from '../../../PublicComponents/SurveyChart/SurveyChart';
 
 function DashboardSurvey() {
     const [age, setAge] = React.useState(10);
@@ -22,7 +21,7 @@ function DashboardSurvey() {
         <div className='dashboard-survey-container'>
             <div className='dashboard-survey-section'>
                 <div>
-                    <FormControl className='survey-content' style={{ maxWidth: "341px", height: "49px", margin: "26px 0px 0px 20px" }}>
+                    <FormControl className='survey-content' style={{ width: "341px", height: "49px", margin: "26px 0px 0px 20px" }}>
                         <InputLabel id="demo-simple-select-label">Odaberi anketu</InputLabel>
                         <Select
                             labelId="demo-simple-select-label"
@@ -38,7 +37,7 @@ function DashboardSurvey() {
                 <div className='survey-pitanja-content'>
                     <div className='survey-pitanja-head'>
                         <h3 className='survey-pitanja-title'>Odaberite pitanje</h3>
-                        <div style={{ margin: "15px 0px 0px -5px" }}>
+                        <div style={{ margin: "-10px 0px 0px -5px" }}>
                             <div style={{ display: "flex" }}>
                                 <input type="radio" id="rodjenje" name="pitanje" value="true" />
                                 <label className='label-1' htmlFor="rodjenje">Kada ste rođeni?</label><br />
@@ -53,11 +52,10 @@ function DashboardSurvey() {
                             </div>
                             <div style={{ display: "flex" }}>
                                 <input type="radio" id="kusur" name="pitanje" value="true" style={{ width: "21px", height: "21px"}} />
-                                <label className='label-1' htmlFor="kusur">Koliko često koristite system Kusur primjer kako izgleda duže pitanje u dva ili više rodova gdje mi je lubenica svoj voz imaju?</label>
+                                <label className='label-1' htmlFor="kusur">Koliko često koristite system Kusur primjer kako izgleda duže <br /> pitanje u dva ili više rodova gdje mi je lubenica svoj voz imaju?</label>
                             </div>
                         </div>
                     </div>
-                    <SurveyChart />
                 </div>
                 <div className='survey-filter-head'>
                     <h3 className='survey-filter-title'>Filter</h3>
@@ -68,7 +66,7 @@ function DashboardSurvey() {
                         <label className='label-1' htmlFor="Žene">Žene</label><br />
                     </div>
                 </div>
-                <FormControl style={{ maxWidth: "311px", margin: "21px 0px 35px 20px", color: "#403F40" }}>
+                <FormControl style={{ width: "341px", height: "49px", margin: "21px 0px 35px 20px", color: "#403F40" }}>
                     <InputLabel id="demo-simple-select-label">Starosna dob</InputLabel>
                     <Select
                         labelId="demo-simple-select-label"

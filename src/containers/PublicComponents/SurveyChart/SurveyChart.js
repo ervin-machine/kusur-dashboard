@@ -1,5 +1,5 @@
 
-import { ResponsiveContainer, Label, PieChart, Pie, LabelList } from "recharts";
+import { ResponsiveContainer, Label, Legend, PieChart, Pie, LabelList } from "recharts";
 import "./SurveyChart.css"
 
 export default function SurveyChart() {
@@ -34,12 +34,20 @@ export default function SurveyChart() {
         let percentageCalculated = (parseInt(data.value) / value) * 100;
         return `${percentageCalculated.toFixed(2)}%`;
     };
-    
+
+    const renderColorfulLegendText = (value, entry) => {
+        return (
+            <span style={{ color: "#596579", fontWeight: 500, width: "max-content" }}>
+                {value}
+            </span>
+        );
+    };
+
 
     return (
         <div className="survey-chart-head">
             <ResponsiveContainer style={{ marginTop: "-50px", marginLeft: "-50px" }}>
-                <PieChart style={{ cursor: "pointer" }}>
+                <PieChart style={{ cursor: "pointer", marginLeft: "-296px", width: "540px" }}>
                     <Pie
                         dataKey="value"
                         data={infoData}
@@ -66,6 +74,14 @@ export default function SurveyChart() {
                             fontSize={12}
                         />
                     </Pie>
+                    <Legend
+                        height={36}
+                        iconType="circle"
+                        layout="vetical" verticalAlign="middle" align="right"
+                        iconSize={10}
+                        wrapperStyle={{ top: 60, left: 270 }}
+                        formatter={renderColorfulLegendText}
+                    />
                 </PieChart>
             </ResponsiveContainer>
         </div>
