@@ -2,10 +2,11 @@ import produce from 'immer'
 import { types } from '../constants'
 
 export const initialState = {
-    profileData: {},
+    isLoading: false,
+    data: {},
 }
 
-const employerClientReducer = (state = initialState, action) => 
+const kusurDataReducer = (state = initialState, action) => 
     produce(state, draft => {
         switch(action.type) {
             case types.FETCH_DATA_REQUEST:
@@ -13,7 +14,7 @@ const employerClientReducer = (state = initialState, action) =>
                 break;
             case types.FETCH_DATA_SUCCESS:
                 draft.isLoading = false;
-                draft.profileData = action.payload
+                draft.data = action.payload
                 break;
             case types.FETCH_DATA_FAILURE:
                 draft.isLoading = false;
@@ -25,4 +26,4 @@ const employerClientReducer = (state = initialState, action) =>
         }
     })
 
-export default employerClientReducer
+export default kusurDataReducer

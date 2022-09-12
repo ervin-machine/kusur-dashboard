@@ -1,8 +1,8 @@
 import { createSelector } from 'reselect'
 import { get } from 'lodash'
 
-const selectEmployer = state => state.employerClient
+const selectData = state => state.kusurData
 
-const selectProfileData = () => createSelector(selectEmployer, selectEmployer => get(selectEmployer, 'profileData'))
+const selectKusurData = () => createSelector(selectData, selectData => get(selectData, 'data'))
 
-export { selectProfileData }
+export { selectKusurData }

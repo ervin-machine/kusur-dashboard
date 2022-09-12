@@ -1,9 +1,6 @@
 import { types } from "../constants"
-import { getApplicants, getJob, getJobs, addJobs, updateJob, uploadFile, fetchEmployerProfile, fetchUserProfile, defaultEmployers, updateEmployer, createJob, getUploadedImage, changeStatus, getCompanyProfile, activateCompanyProfile, getJobsByStatus, startFollowingCompany, checkIsUserFollowing, unfollowCompany, linkToCompany, companyToLinkPhoto, acceptLinkToCompany, hireApplicant, addFavouriteApplicant, hideApplicant, deleteHireApplicant, deleteFavouriteApplicant, deleteHiddenApplicant, initInstagramFeed, getInstagramMediaFeed, declineLinkToCompany, getLinkedCompanies, updateApplicantNote } from "../../services"
+import { fetchKusurData } from "../../services"
 
-import CookieHandlerInstance from "../../../../../utils/cookie"
-import jwt_decode from "jwt-decode";
-import axiosClient from "../../../../../utils/axios"
 
 const fetchDataRequest = () => {
     return {
@@ -25,11 +22,11 @@ const fetchDataFailure = (err) => {
     }
 }
 
-export const fetchEmployerData = () => {
+export const fetchData = () => {
     return async (dispatch) => {
         dispatch(fetchDataRequest())
         try {
-            const profile = await fetchEmployerProfile()
+            const profile = await fetchKusurData()
             dispatch(fetchDataSuccess(profile))
         } catch(err) {
             dispatch(fetchDataFailure(err))

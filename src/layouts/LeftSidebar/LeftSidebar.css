@@ -20,6 +20,10 @@
     padding-bottom: 20px;
 }
 
+.left-sidebar-list {
+    margin-left: 20px;
+}
+
 .left-sidebar-list-item {
     display: flex;
     margin-left: 11px;
