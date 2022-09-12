@@ -6,8 +6,7 @@ const yourConfig = {
     }
 }
 
-
-export const fetchKusurData = () => {
+export const fetchKusurData = async () => {
     const res = await axios.get(REACT_APP_API_URL, yourConfig);
     console.log(res.data);
     return res;

@@ -10,8 +10,6 @@ import DashboardSurvey from './components/DashboardSurvey/DashboardSurvey'
 
 import { selectKusurData } from "./store/selectors"
 
-
-
 const Dashboard = React.memo(function Dashboard() {
     const { data } = useFetchKusurData()
 
