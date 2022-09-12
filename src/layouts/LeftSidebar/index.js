@@ -14,6 +14,7 @@ import expandMoreIcon from "../../assets/images/expandMoreIcon.svg"
 
 function LeftSidebar(props) {
   const { section } = props;
+  
   return (
     <div className='left-sidebar-head'>
       <div className='left-sidebar-logo'>

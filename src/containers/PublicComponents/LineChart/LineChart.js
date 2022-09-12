@@ -77,15 +77,13 @@ const datas = [
     },
 ];
 
-function LineCharts(props) {
-    const { data } = props
+function LineCharts() {
     const [registrovaniKorisnici, setRegistrovaniKorisnici] = React.useState(10);
 
     const handleChange = (event) => {
         setRegistrovaniKorisnici(event.target.value);
     };
 
-    console.log(data)
     return (
         <div className='line-chart'>
             <FormControl className='survey-content' style={{ maxWidth: "267px", height: "49px", margin: "26px 0px 30px 30px" }}>

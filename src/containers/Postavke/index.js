@@ -13,6 +13,7 @@ function Postavke() {
     const handleChange = (event) => {
         setAge(event.target.value);
     };
+    
     return (
         <div className='postavke-container'>
             <div className='postavke-head'>

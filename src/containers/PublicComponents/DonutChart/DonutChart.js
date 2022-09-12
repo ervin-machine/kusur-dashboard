@@ -27,7 +27,6 @@ export default function DonutChart(props) {
     }
 
     const renderCustomizedLabelPercentage = (data, total = 7) => {
-        console.log("Data", data);
         let percentageCalculated = (parseInt(data.value) / total) * 100;
         return `${percentageCalculated.toFixed(2)}%`;
     };

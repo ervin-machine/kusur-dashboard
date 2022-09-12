@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
-import { useFetchKusurData } from "../../hooks/fetchKusurData"
 
 import "./Dashboard.css"
 import DashboardStatistic from './components/DashboardStatistic/DashboardStatistic'
@@ -9,15 +8,20 @@ import DashboardCharts from './components/DashboardCharts/DashboardCharts'
 import DashboardSurvey from './components/DashboardSurvey/DashboardSurvey'
 
 import { selectKusurData } from "./store/selectors"
+import { fetchData } from "./store/actions/index"
 
-const Dashboard = React.memo(function Dashboard() {
-    const { data } = useFetchKusurData()
+const Dashboard = React.memo(function Dashboard(props) {
+    const { fetchData, kusurData }  = props
 
+    useEffect(() => {
+        fetchData()
+    }, [fetchData])
+ 
     return (
         <div className='dashboard-container'>
             <div className='dashboard-content'>
-                <DashboardStatistic data={data} />
-                <DashboardCharts data={data} />
+                <DashboardStatistic data={kusurData} />
+                <DashboardCharts data={kusurData} />
                 <DashboardSurvey />
                 <div className='footer-head'>© 2022 All rights reserved. Kusur.</div>
             </div>
@@ -26,10 +30,17 @@ const Dashboard = React.memo(function Dashboard() {
 }
 )
 const mapStateToProps = createStructuredSelector({
-    data: selectKusurData(),
+    kusurData: selectKusurData(),
 })
 
+const mapDispatchToProps = dispatch => {
+    return {
+        fetchData: () => {
+            dispatch(fetchData())
+        },
+    }
+  }
 
-const withConnect = connect(mapStateToProps)
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
 
 export default (withConnect)(Dashboard)

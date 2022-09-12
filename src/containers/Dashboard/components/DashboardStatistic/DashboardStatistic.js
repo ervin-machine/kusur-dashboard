@@ -83,7 +83,7 @@ function DashboardStatistic(props) {
         }
         return null
     }
-    console.log(infoData)
+    
     return (
         <div>
             <div className='dashboard-statistic'>

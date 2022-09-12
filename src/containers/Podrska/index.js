@@ -1,6 +1,8 @@
 import React from 'react'
 import PodrskaCard from './components/PodrskaCard/PodrskaCard'
+
 function Podrska() {
+
   return (
     <div style={{ display: "flex", marginLeft: "42.25px" }}>
       <PodrskaCard

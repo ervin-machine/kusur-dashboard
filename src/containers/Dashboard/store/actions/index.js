@@ -11,7 +11,7 @@ const fetchDataRequest = () => {
 const fetchDataSuccess = (data) => {
     return {
         type: types.FETCH_DATA_SUCCESS,
-        payload: res
+        payload: data.data.payload
     }
 }
 
