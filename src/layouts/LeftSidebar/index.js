@@ -17,11 +17,12 @@ function LeftSidebar(props) {
   
   return (
     <div className='left-sidebar-head'>
+      <div class="sidebar-background"></div>
       <div className='left-sidebar-logo'>
         <img src={logo} alt="logo" />
       </div>
       <div className='left-sidebar-list'>
-        <div className='left-sidebar-list-item' style={{ backgroundColor: section === "Dashboard" ? "#3D44DB" : "transparent", marginRight: "-20px"}}>
+        <div className='left-sidebar-list-item' style={{ backgroundColor: section === "Dashboard" ? "#3D44DB" : "transparent", marginRight: "-10px"}}>
           <img src={dashboardLogo} alt="" />
           <h3 className='left-sidebar-list-item-text'>Dashboard</h3>
         </div>
@@ -69,7 +70,7 @@ function LeftSidebar(props) {
           <TextSnippetIcon style={{ width: "18px", height: "18px", color: "white", marginTop: "16px" }} />
           <h3 className='left-sidebar-list-item-text'>Dokumenti</h3>
         </div>
-        <div className='left-sidebar-list-item' style={{ backgroundColor: section === "Postavke" ? "#3D44DB" : "transparent"}}>
+        <div className='left-sidebar-list-item' style={{ backgroundColor: section === "Postavke" ? "#3D44DB" : "transparent", marginRight: "-10px" }}>
           <TuneIcon style={{ width: "18px", height: "18px", color: "white", marginTop: "16px" }} />
           <h3 className='left-sidebar-list-item-text' >Postavke</h3>
         </div>

@@ -6,8 +6,7 @@
 .left-sidebar-head {
     width: 251px;
     height: 100%;
-    background-color: #0F172E;
-    padding-right: 30px;
+    padding-right: 21px;
     margin-left: -20px;
     margin-top: -8px;
 }
@@ -40,4 +39,17 @@
     text-align: left;
     margin-left: 15px;
     width: max-content;
+}
+
+.sidebar-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 251px;
+    height: 100%;
+    background-color: #0F172E;
+    overflow: hidden;
+    outline: 0;
+    z-index: -1;
 }

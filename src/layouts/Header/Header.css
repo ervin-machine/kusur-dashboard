@@ -1,3 +1,8 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../assets/fonts/Roboto-Regular.ttf');
+  }
+
 .header-head {
     display: flex;
     justify-content: right;
@@ -69,7 +74,7 @@
 @media screen and (max-width: 399px) and (min-width: 340px) {
     .header-head {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         padding-top: 18px;
         padding-bottom: 5px;
     }
