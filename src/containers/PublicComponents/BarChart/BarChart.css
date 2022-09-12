@@ -22,6 +22,7 @@
 @media screen and (max-width: 1599px) and (min-width: 1050px) {
     .bar-chart-head {
         margin-top: 20px;
+        margin-left: 0px;
     }
 }
 

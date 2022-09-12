@@ -1,7 +1,7 @@
 import React from 'react';
 import "./LineChart.css"
 import { pure } from 'recompose';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -98,20 +98,19 @@ function LineCharts() {
                     <MenuItem value={10}>Registrovanih korisnika</MenuItem>
                 </Select>
             </FormControl>
-            <div>
-                <LineChart
-                    width={602}
-                    height={166}
-                    data={datas}
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
-                    <Line type="monotone" dataKey="pv" stroke="#3D44DB" strokeWidth={3} activeDot={{ r: 10 }} />
-                </LineChart>
-            </div>
-
+                <ResponsiveContainer width="95%" height={166}>
+                    <LineChart
+                        width={602}
+                        height={166}
+                        data={datas}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="name" />
+                        <YAxis />
+                        <Tooltip />
+                        <Line type="monotone" dataKey="pv" stroke="#3D44DB" strokeWidth={3} activeDot={{ r: 10 }} />
+                    </LineChart>
+                </ResponsiveContainer>
         </div>
     )
 }

@@ -13,6 +13,10 @@
     margin-top: 35px;
 }
 
+.survey-content {
+    width: 341px;
+}
+
 .survey-pitanja-title {
     font-family: RobotoRegular;
     font-size: 16px;
@@ -38,7 +42,7 @@
 }
 
 .survey-filter-head {
-    margin: 0px 0px 0px 25px;
+    margin: -120px 0px 0px 25px;
 }
 
 .informacije-head {
@@ -49,7 +53,7 @@
 }
 
 .informacije-content {
-    margin: 104px 0px 0px 30px;
+    margin: 112px 0px 0px 30px;
 }
 
 .informacije-title {
@@ -98,121 +102,157 @@ input[type='radio']:checked:before {
     cursor: pointer;
 }
 
+.input-1[type='radio'] {
+    display: block !important;
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.input-1[type='radio']:checked:before {
+    content: '';
+    display: block;
+    width: 10px;
+    background-color: white;
+    height: 10px;
+    border: 5px solid blue;
+    margin: 0px 20px 20px 0px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .label-1 {
     font-family: RobotoRegular;
     font-size: 14px;
     color: #403F40;
     font-weight: 600;
     margin-top: 10px;
+    margin-left: 5px;
 }
 
 @media screen and (max-width: 1599px) and (min-width: 1050px) {
     .dashboard-survey-container {
         display: flex;
-        margin-top: 30px;
+        margin-top: -10px;
         padding-bottom: 354px;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
+
     .informacije-content {
         margin: 0px 0px 0px 30px;
     }
+
     .informacije-head {
-        margin-top: 30px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
+
     .survey-pitanja-content {
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1270px) and (min-width: 1050px) {
+    .survey-filter-head {
+        margin: -140px 0px 0px 25px;
     }
 }
 
 @media screen and (max-width: 1049px) and (min-width: 1020px) {
     .dashboard-survey-container {
         display: flex;
-        margin-top: 30px;
+        margin-top: -10px;
         padding-bottom: 354px;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
+
     .informacije-content {
         margin: 0px 0px 0px 30px;
     }
-    .informacije-head {
-        margin-top: 10px;
-    }
+
     .survey-pitanja-content {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .survey-filter-head {
+        margin: -140px 0px 0px 25px;
+    }
+
+    .informacije-head {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
 }
 
-@media screen and (max-width: 1019px) and (min-width: 755px) {
+@media screen and (max-width: 1019px) and (min-width: 340px) {
     .dashboard-survey-container {
         display: flex;
-        margin-top: 30px;
+        margin-top: -10px;
         padding-bottom: 354px;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
-    .informacije-content {
-        margin: 0px 0px 0px 30px;
-    }
-    .informacije-head {
-        margin-top: 10px;
-    }
-    .survey-pitanja-content {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
 
-@media screen and (max-width: 754px) and (min-width: 695px) {
     .dashboard-survey-section {
         max-width: 972px;
-        height: auto;
+        height: 900px;
         background-color: white;
-        margin-left: 5px;
+        margin-left: 29px;
         margin-top: 35px;
     }
-    .dashboard-survey-container {
-        display: flex;
-        margin-top: 30px;
-        padding-bottom: 354px;
-        flex-wrap: wrap;
-    }
-    .informacije-content {
-        margin: 0px 0px 0px 30px;
-    }
-    .informacije-head {
-        margin-top: 10px;
-    }
-    .survey-pitanja-content {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
 
-@media screen and (max-width: 694px) and (min-width: 340px) {
-    .dashboard-survey-section {
-        max-width: 972px;
-        height: auto;
-        background-color: white;
-        margin-left: -5px;
-        margin-top: 35px;
-    }
-    .dashboard-survey-container {
-        display: flex;
-        margin-top: 30px;
-        padding-bottom: 354px;
-        flex-wrap: wrap;
-        margin-right: 5px;
-        margin-left: 10px;
-    }
     .informacije-content {
         margin: 0px 0px 0px 30px;
     }
+
     .informacije-head {
-        margin-top: 10px;
+        margin-top: 35px;
+        margin-left: 20px;
     }
+
     .survey-pitanja-content {
         display: flex;
         flex-wrap: wrap;
+        max-width: fit-content;
+    }
+
+    .survey-filter-head {
+        margin: 100px 0px 0px 25px;
+    }
+
+    .survey-content {
+        max-width: 341px;
+        width: 300px;
+    }
+    .input-1[type='radio'] {
+        display: block !important;
+        width: 24px;
+        height: 24px;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
+    
+    .input-1[type='radio']:checked:before {
+        content: '';
+        display: block;
+        width: 10px;
+        background-color: white;
+        height: 10px;
+        border: 5px solid blue;
+        margin: 2px 30px 30px 0px;
+        border-radius: 50%;
+        cursor: pointer;
     }
 }

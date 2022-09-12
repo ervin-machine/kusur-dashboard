@@ -31,13 +31,30 @@ export default function DonutChart(props) {
         return `${percentageCalculated.toFixed(2)}%`;
     };
 
-    const renderColorfulLegendText = (value, entry) => {
+    const renderLegend = (props) => {
+        const { payload } = props;
+        console.log(payload)
         return (
-            <span style={{ color: "#596579", fontWeight: 500, width: "max-content" }}>
-                {value}
-            </span>
+            <div style={{ marginTop: "-90px", marginRight: "20px"}}>
+                {
+                    payload.map((entry, index) => (
+                        <div key={index} style={{ display: "flex", marginTop: "10px"}}>
+                            <div style={{ width: "11px", height: "11px", border: "none", borderRadius: "100%", backgroundColor: entry.color }}></div>
+                            <div style={{ marginLeft: "5px"}}>
+                                <p className="legend-name" style={{ marginTop:"-3px" }}>
+                                    {entry.value}
+                                </p>
+                                <p className="legend-value" style={{ marginTop: "-5px" }}>
+                                    {entry.payload.value}
+                                </p>
+                            </div>
+
+                        </div>
+                    ))
+                }
+            </div>
         );
-    };
+    }
 
     return (
         <div className="donut-chart-head">
@@ -51,13 +68,13 @@ export default function DonutChart(props) {
                         height={150}
                         cx="35%"
                         cy="35%"
-                        innerRadius={30}
+                        innerRadius={25}
                         outerRadius={80}
                         fill="black"
                         nameKey="name"
                     >
                         <Label
-                            value={value} position="centerBottom" className='label-top' fontSize='16px'
+                            value={value} position="centerBottom" className='label-top' fontSize='14px'
                         />
                         <LabelList
                             dy={-3}
@@ -67,7 +84,7 @@ export default function DonutChart(props) {
                             angle="0"
                             stroke="none"
                             className="label-percentage"
-                            fontSize={12}
+                            fontSize={16}
                         />
                     </Pie>
                     <Legend
@@ -75,10 +92,9 @@ export default function DonutChart(props) {
                         iconType="circle"
                         layout="vetical" verticalAlign="middle" align="right"
                         iconSize={10}
-                        wrapperStyle={{top: 90}}
-                        formatter={renderColorfulLegendText}
+                        content={renderLegend}
                     />
-                    
+
                 </PieChart>
             </ResponsiveContainer>
         </div>

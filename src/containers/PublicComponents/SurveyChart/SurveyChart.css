@@ -12,6 +12,27 @@
     height: 321px;
 }
 
+.legend-name {
+    font-family: RobotoRegular;
+    font-size: 14px;
+    color: #403F40CC;
+    font-weight: normal;
+}
+
+.legend-value {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    color: #403F40;
+    font-weight: 600;
+}
+
+.survey-chart-legend {
+    width: 200px;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 40px;
+}
+
 @media screen and (max-width: 1276px) and (min-width: 1050px) {
     .survey-chart-head {
         margin-top: 20px;
@@ -23,6 +44,18 @@
     .survey-chart-head {
         margin-top: 20px;
         margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1019px) and (min-width: 300px) {
+    .survey-chart-content {
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+    .survey-chart-legend {
+        width: 200px;
+        margin-left: -180px;
+        margin-top: 100px;
     }
 }
 

@@ -35,26 +35,43 @@ export default function SurveyChart() {
         return `${percentageCalculated.toFixed(2)}%`;
     };
 
-    const renderColorfulLegendText = (value, entry) => {
+    const renderLegend = (props) => {
+        const { payload } = props;
+        console.log(payload)
         return (
-            <span style={{ color: "#596579", fontWeight: 500, width: "max-content" }}>
-                {value}
-            </span>
+            <div className="survey-chart-legend">
+                {
+                    payload.map((entry, index) => (
+                        <div key={index} style={{ display: "flex", marginTop: "10px"}}>
+                            <div style={{ width: index === 1 ? "18px" : (index === 2 ? "13px" : "11px"), height: "11px", border: "none", borderRadius: "100%", backgroundColor: entry.color }}></div>
+                            <div style={{ marginLeft: "5px"}}>
+                                <p className="legend-name" style={{ marginTop:"-3px" }}>
+                                    {entry.value}
+                                </p>
+                                <p className="legend-value" style={{ marginTop: "-5px" }}>
+                                    {entry.payload.value}
+                                </p>
+                            </div>
+
+                        </div>
+                    ))
+                }
+            </div>
         );
-    };
+    }
 
 
     return (
         <div className="survey-chart-head">
-            <ResponsiveContainer style={{ marginTop: "-50px", marginLeft: "-50px" }}>
-                <PieChart style={{ cursor: "pointer", marginLeft: "-296px", width: "540px" }}>
+            <ResponsiveContainer className="survey-chart-content" width="100%" height="100%">
+                <PieChart style={{ cursor: "pointer", marginLeft: "-46px"}}>
                     <Pie
                         dataKey="value"
                         data={infoData}
                         width={150}
                         height={150}
-                        cx="50%"
-                        cy="35%"
+                        cx="70%"
+                        cy="45%"
                         innerRadius={30}
                         outerRadius={80}
                         fill="black"
@@ -79,8 +96,7 @@ export default function SurveyChart() {
                         iconType="circle"
                         layout="vetical" verticalAlign="middle" align="right"
                         iconSize={10}
-                        wrapperStyle={{ top: 60, left: 270 }}
-                        formatter={renderColorfulLegendText}
+                        content={renderLegend}
                     />
                 </PieChart>
             </ResponsiveContainer>
