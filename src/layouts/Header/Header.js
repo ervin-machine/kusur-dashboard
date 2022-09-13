@@ -24,7 +24,7 @@ function Header(props) {
     }
 
     return (
-        <div>
+        <div style={{ backgroundColor: "white"}}>
             <div className='header-head'>
                 <div className='header-content' onClick={() => setSection("Postavke")}>
                     <p className='header-info'>Info</p>

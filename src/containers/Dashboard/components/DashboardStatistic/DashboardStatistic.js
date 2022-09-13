@@ -90,12 +90,12 @@ function DashboardStatistic(props) {
                 <h1 className='dashboard-statistic-title'>Dashboard statistics</h1>
                 <div className='dashboard-statistic-buttons'>
                     <div onClick={handleOpenOdabirDatuma}>
-                        <img src={calendar} alt="" style={{ position: "absolute", margin: "16px 0px 0px 171px" }} />
+                        <img className='calendar-icon' src={calendar} alt="" />
                         <button className='dashboard-statistic-button left-button'>Ovaj mjesec</button>
                         <RenderOdabirDatuma />
                     </div>
                     <div>
-                        <img src={chevronDown} alt="" style={{ position: "absolute", margin: "20px 0px 0px 171px" }} />
+                        <img className='chevron-down-icon' src={chevronDown} alt="" />
                         <button className='dashboard-statistic-button'>Poslovnica X</button>
                     </div>
 

@@ -30,6 +30,7 @@ function DashboardSurvey() {
                             value={age}
                             label="Odaberi anketu<"
                             onChange={handleChange}
+                            disabled
                         >
                             <MenuItem value={10}>Welcome Survey</MenuItem>
                         </Select>

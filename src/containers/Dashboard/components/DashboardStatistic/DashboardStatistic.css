@@ -48,6 +48,14 @@
     display: flex;
     flex-wrap: wrap;
 }
+.calendar-icon {
+    position: absolute;
+    margin: 16px 0px 0px 171px;
+}
+.chevron-down-icon {
+    position: absolute;
+    margin: 20px 0px 0px 171px;
+}
 
 @media screen and (max-width: 1599px) and (min-width: 1050px) {
     .info-cards {
@@ -77,8 +85,27 @@
         margin-left: 30px;
         flex-wrap: wrap;
     }
+
     .dashboard-statistic-buttons {
         margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1009px) and (min-width: 770px) {
+    .dashboard-statistic {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        flex-wrap: wrap;
+    }
+    .dashboard-statistic-buttons {
+        display: flex;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-left: 60px;
+    }
+    .dashboard-statistic-title {
+        margin-top: 20px;
     }
 }
 
@@ -86,30 +113,38 @@
     .dashboard-statistic {
         display: flex;
         justify-content: center;
-        margin-left: -10px;
         flex-wrap: wrap;
     }
+
+    .dashboard-statistic-title {
+        margin-top: 20px;
+        color: #100F10;
+        font-size: 28px;
+        font-family: RobotoRegular;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+
     .dashboard-statistic-buttons {
         margin-top: 0px;
         flex-wrap: wrap;
         justify-content: center;
         margin-left: -10px;
     }
+
     .dashboard-statistic-button {
         margin-top: 10px;
     }
+
     .left-button {
         margin-right: 0px;
     }
+    .calendar-icon {
+        position: absolute;
+        margin: 26px 0px 0px 171px;
+    }
+    .chevron-down-icon {
+        position: absolute;
+        margin: 30px 0px 0px 171px;
+    }
 }
-/* 
-1599 - 1050 space-evenly, margin-right 32px
-1049 - 500 display: flex;
-    flex-wrap: wrap;
-    margin-left: 6px;
-    justify-content: space-evenly;
-        flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-
-*/
