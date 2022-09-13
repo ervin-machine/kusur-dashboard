@@ -13,12 +13,22 @@
     }
 }
 
-@media screen and (max-width: 1049px) and (min-width: 300px) {
+@media screen and (max-width: 1049px) and (min-width: 929px) {
     .dashboard-charts {
         display: flex;
         margin-top: 10px;
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-right: 32px;
+    }
+}
+
+@media screen and (max-width: 928px) and (min-width: 340px) {
+    .dashboard-charts {
+        display: flex;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-right: 19.5px;
     }
 }

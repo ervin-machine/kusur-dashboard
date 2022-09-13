@@ -65,16 +65,26 @@
 }
 
 @media screen and (max-width: 1049px) and (min-width: 300px) {
+    .dashboard-statistic-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1049px) and (min-width: 929px) {
     .info-cards {
         flex-wrap: wrap;
         margin-left: 6px;
         justify-content: center;
     }
+}
 
-    .dashboard-statistic-content {
+@media screen and (max-width: 928px) and (min-width: 340px) {
+    .info-cards {
         flex-wrap: wrap;
+        margin-left: 11px;
         justify-content: center;
-        margin-right: 20px;
     }
 }
 
