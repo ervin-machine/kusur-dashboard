@@ -14,7 +14,7 @@
 .header-info {
     font-family: RobotoRegular;
     margin-right: 15px;
-    margin-top: 8px;
+    margin-top: 5px;
     font-size: 16px;
     font-weight: 500;
     color: #403F40;
@@ -54,7 +54,7 @@
 .section-type {
     display: flex;
     margin-left: 30px;
-    margin-top: -10px;
+    margin-top: -25px;
 }
 
 .section-text {
@@ -63,6 +63,7 @@
     color: #403f40cc;
     font-weight: normal;
     margin-left: 10px;
+    margin-top: 11px;
 }
 
 .header-content {
@@ -85,5 +86,24 @@
         margin-right: 10px;
         padding-top: 3.5px;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1216px) {
+    .header-head {
+        display: flex;
+        justify-content: right;
+        padding-top: 18px;
+        padding-bottom: 5px;
+        margin-right: 120px;
+    }
+}
+
+@media screen and (max-width: 1215px) and (min-width: 971px) {
+    .header-head {
+        display: flex;
+        justify-content: center;
+        padding-top: 18px;
+        padding-bottom: 5px;
     }
 }

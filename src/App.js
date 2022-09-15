@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <LeftSidebar section={section} />
-      <div style={{ width: "100%"}}>
+      <div className='main-content' style={{ width: "100%"}}>
         <Header section={section} setSection={setSection} />
         <RenderSection />
       </div>

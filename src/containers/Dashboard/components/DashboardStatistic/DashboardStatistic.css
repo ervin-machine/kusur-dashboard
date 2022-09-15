@@ -42,6 +42,7 @@
 
 .dashboard-statistic-content {
     display: flex;
+    align-items: center;
 }
 
 .info-cards {
@@ -64,11 +65,86 @@
     }
 }
 
-@media screen and (max-width: 1049px) and (min-width: 300px) {
+@media screen and (max-width: 1280px) and (min-width: 1217px) {
     .dashboard-statistic-content {
         flex-wrap: wrap;
         justify-content: center;
         margin-right: 20px;
+    }
+
+    .dashboard-statistic {
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+    }
+    .dashboard-statistic-title {
+        margin-left: -100px;
+    }
+    .dashboard-statistic-buttons {
+        margin-right: 0px;
+        margin-left: 130px;
+    }
+}
+
+@media screen and (max-width: 1216px) and (min-width: 1026px) {
+    .dashboard-statistic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;
+    }
+    .dashboard-statistic-title {
+        margin-left: -50px;
+        margin-top: 20px;
+    }
+    .dashboard-statistic-buttons {
+        margin-right: 0px;
+        margin-left: -40px;
+        margin-top: 13px;
+    }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 970px) {
+    .dashboard-statistic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;
+        max-width: 800px;
+        margin-top: 20px;
+    }
+    .dashboard-statistic-title {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .dashboard-statistic-buttons {
+        margin-right: 0px !important;
+        margin-left: 0px;
+        margin-top: 13px;
+    }
+}
+
+
+@media screen and (max-width: 1085px) and (min-width: 971px) {
+    .dashboard-statistic-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 820px;
+    }
+}
+
+@media screen and (max-width: 1049px) and (min-width: 970px) {
+    .dashboard-statistic-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 740px;
+    }
+}
+
+@media screen and (max-width: 969px) and (min-width: 300px) {
+    .dashboard-statistic-content {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -76,7 +152,7 @@
     .info-cards {
         flex-wrap: wrap;
         margin-left: 6px;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 }
 
@@ -84,42 +160,47 @@
     .info-cards {
         flex-wrap: wrap;
         margin-left: 11px;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 744px) and (min-width: 482px) {
+    .dashboard-statistic {
+        display: flex;
         justify-content: center;
-    }
-}
-
-@media screen and (max-width: 769px) and (min-width: 500px) {
-    .dashboard-statistic {
-        display: flex;
-        justify-content: space-between;
         margin-left: 30px;
         flex-wrap: wrap;
     }
 
     .dashboard-statistic-buttons {
-        margin-top: 0px;
-    }
-}
-
-@media screen and (max-width: 1009px) and (min-width: 770px) {
-    .dashboard-statistic {
-        display: flex;
-        justify-content: space-between;
-        margin-left: 30px;
+        margin-top: 10px;
         flex-wrap: wrap;
-    }
-    .dashboard-statistic-buttons {
-        display: flex;
+        justify-content: center;
         margin-right: 0px;
-        margin-top: 0px;
-        margin-left: 60px;
     }
     .dashboard-statistic-title {
         margin-top: 20px;
     }
 }
 
-@media screen and (max-width: 499px) and (min-width: 340px) {
+@media screen and (max-width: 1009px) and (min-width: 971px) {
+    .dashboard-statistic {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        flex-wrap: wrap;
+    }
+    .dashboard-statistic-buttons {
+        display: flex;
+        margin-right: 33px;
+        margin-top: 13px;
+    }
+    .dashboard-statistic-title {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 481px) and (min-width: 340px) {
     .dashboard-statistic {
         display: flex;
         justify-content: center;
@@ -144,6 +225,7 @@
 
     .dashboard-statistic-button {
         margin-top: 10px;
+        margin-left: 10px;
     }
 
     .left-button {

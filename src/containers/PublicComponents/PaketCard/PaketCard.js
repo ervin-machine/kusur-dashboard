@@ -13,7 +13,7 @@ function PaketCard() {
                     <button className='paket-button-naziv'>BUSINESS</button>
                 </div>
             </div>
-            <div style={{ marginTop: "65px"}}>
+            <div style={{ marginTop: "65px", marginLeft: "18px"}}>
                 <hr style={{ border: "0.1px solid #EBECEE", width: "265px" }} />
             </div>
             <div className='paket-card-footer'>

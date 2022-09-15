@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./DashboardStatistic.css"
-
 import OdabirDatumaModal from '../../../PublicComponents/OdabirDatumaModal/OdabirDatumaModal'
 import InfoCard from '../../../PublicComponents/InfoCard/InfoCard'
 import PaketCard from '../../../PublicComponents/PaketCard/PaketCard'
@@ -85,7 +84,7 @@ function DashboardStatistic(props) {
     }
     
     return (
-        <div>
+        <div class="container">
             <div className='dashboard-statistic'>
                 <h1 className='dashboard-statistic-title'>Dashboard statistics</h1>
                 <div className='dashboard-statistic-buttons'>
@@ -101,7 +100,7 @@ function DashboardStatistic(props) {
 
                 </div>
             </div>
-            <hr style={{ width: "96%", border: "0.1px solid #EBECEE" }} />
+            <hr style={{ marginLeft: "30px", marginRight: "32px", border: "0.1px solid #EBECEE" }} />
             <div className='dashboard-statistic-content'>
                 <RenderPaketCard />
                 <div className='info-cards'>

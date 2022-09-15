@@ -39,7 +39,7 @@ function DashboardSurvey() {
                 <div className='survey-pitanja-content'>
                     <div className='survey-pitanja-head'>
                         <h3 className='survey-pitanja-title'>Odaberite pitanje</h3>
-                        <div style={{ margin: "-10px 0px 0px -5px" }}>
+                        <div style={{ margin: "10px 0px 0px -5px" }}>
                             <div style={{ display: "flex" }}>
                                 <input type="radio" id="rodjenje" name="pitanje" value="true" />
                                 <label className='label-1' htmlFor="rodjenje">Kada ste rođeni?</label><br />
@@ -62,7 +62,7 @@ function DashboardSurvey() {
                 </div>
                 <div className='survey-filter-head'>
                     <h3 className='survey-filter-title'>Filter</h3>
-                    <div style={{ display: "flex", marginTop: "-10px", marginLeft: "-5px" }}>
+                    <div style={{ display: "flex", marginTop: "-5px", marginLeft: "-5px" }}>
                         <input type="checkbox" id="Muškarci" name="spol" value="Muškarci" style={{ marginTop: "12px" }} />
                         <label className='label-1' htmlFor="Muškarci">Muškarci</label><br />
                         <input type="checkbox" id="Žene" name="spol" value="Žene" style={{ marginLeft: "30px", marginTop: "12px" }} />

@@ -5,6 +5,8 @@ import { Provider } from 'react-redux'
 import { ConnectedRouter } from 'connected-react-router'
 import App from './App';
 
+import 'bulma/css/bulma.min.css';
+
 import history from './utils/history'
 import configureStore from './store/configureStore'
 import "./index.css"

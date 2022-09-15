@@ -22,9 +22,8 @@ function Header(props) {
         }
         return null;
     }
-
     return (
-        <div style={{ backgroundColor: "white"}}>
+        <div class="container" style={{ backgroundColor: "white" }}>
             <div className='header-head'>
                 <div className='header-content' onClick={() => setSection("Postavke")}>
                     <p className='header-info'>Info</p>
@@ -47,7 +46,7 @@ function Header(props) {
                 <ChevronRightIcon style={{ marginTop: "12px", marginLeft: "10px", color: "#EBECEE", width: "20px", height: "20px" }} />
                 <p className='section-text'>{section}</p>
             </div>
-            <div style={{ marginTop: "-10px"}}>
+            <div style={{ marginTop: "-10px" }}>
                 <hr style={{ border: "1px solid #EBECEE" }} />
             </div>
         </div>

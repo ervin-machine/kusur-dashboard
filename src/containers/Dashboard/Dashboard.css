@@ -9,7 +9,7 @@
 }
 
 .dashboard-content {
-    margin-top: -9px;
+    margin-top: -25px;
     height: auto;
     background-color: rgb(252, 252, 252);
 }
@@ -40,7 +40,8 @@
     height: 60px;
     width: 86%;
     background-color: white;
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-left: 90px;
     font-family: RobotoRegular;
     color: #403F40CC;
     font-size: 14px;

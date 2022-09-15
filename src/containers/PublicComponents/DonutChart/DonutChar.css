@@ -39,14 +39,8 @@
     font-weight: 600;
 }
 
-@media screen and (max-width: 1276px) and (min-width: 1050px) {
-    .donut-chart-head {
-        margin-top: 20px;
-        margin-left: 30px;
-    }
-}
 
-@media screen and (max-width: 1049px) and (min-width: 300px) {
+@media screen and (max-width: 1280px) and (min-width: 300px) {
     .donut-chart-head {
         margin-top: 20px;
         margin-left: 30px;

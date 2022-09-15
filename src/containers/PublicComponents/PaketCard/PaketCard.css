@@ -14,7 +14,7 @@
 
 .paket-card-content {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 80px;
     padding-left: 0px;
 }
 
@@ -37,11 +37,8 @@
 }
 
 .paket-card-footer {
-    position: absolute;
-    margin-top: -10px;
-    margin-left: 50px;
+    margin-top: -15px;
     text-align: center;
-    width: max-content;
 }
 
 .paket-card-footer-text {
@@ -55,7 +52,6 @@
     font-family: RobotoRegular;
     font-size: 12px;
     color: #747474;
-    margin-top: -5px;
     font-weight: normal;
 }
 
@@ -64,10 +60,4 @@
     font-size: 14px;
     color: #403F40;
     font-weight: 600;
-}
-
-@media screen and (max-width: 1599px) and (min-width: 1050px) {
-    .paket-card-section {
-        margin-top: 80px;
-    }
 }

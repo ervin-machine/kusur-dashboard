@@ -18,7 +18,7 @@ const Dashboard = React.memo(function Dashboard(props) {
     }, [fetchData])
  
     return (
-        <div className='dashboard-container'>
+        <div class="container">
             <div className='dashboard-content'>
                 <DashboardStatistic data={kusurData} />
                 <DashboardCharts data={kusurData} />

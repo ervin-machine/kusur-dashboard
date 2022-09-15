@@ -3,6 +3,9 @@
     src: url('../../assets/fonts/Roboto-Regular.ttf');
   }
 
+.menu-icon {
+    margin-left: "20px"
+}
 .left-sidebar-head {
     width: 251px;
     height: 100%;
@@ -20,14 +23,15 @@
 }
 
 .left-sidebar-list {
-    margin-left: 20px;
     margin-top: 10px;
+    width: 251px;
 }
 
 .left-sidebar-list-item {
     display: flex;
-    margin-left: 11px;
-    padding-left: 10px;
+    width: 230px;
+    margin-left: 10px;
+    padding-left: 20px;
 
 }
 
@@ -39,6 +43,7 @@
     text-align: left;
     margin-left: 15px;
     width: max-content;
+    margin-top: 16px;
 }
 
 .sidebar-background {
@@ -52,4 +57,10 @@
     overflow: hidden;
     outline: 0;
     z-index: -1;
+}
+
+@media screen and (max-width: 399px) and (min-width: 340px) {
+    .menu-icon {
+        margin-left: 0px;
+    }
 }
